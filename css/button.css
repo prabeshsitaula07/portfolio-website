@@ -1,0 +1,13 @@
+li button{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+li button:hover{
+    cursor: pointer;
+}
