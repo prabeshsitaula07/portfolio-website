@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root .light-theme {
+    --bg-color: #bdbdbd;
+    --text-color: #333;
+    --h4-color: #0151cc;
+    --navbar-bg: white;
+    --sec-clr: grey;
+    --navbar-color: #fff;
+    --navbar-box-shadow: black;
+    --box-color: rgb(51, 51, 51);
+    --shadow-color-: black;
+
+}
+
+:root .dark-theme {
+    --bg-color: #201f1f;
+    --text-color: white;
+    --h4-color: #0151cc;
+    --navbar-bg: black;
+    --sec-clr: #fff;
+    --navbar-color: #fff;
+    --navbar-box-shadow: white;
+    --box-color: rgb(51, 51, 51);
+    --shadow-color-: rgb(201, 201, 201);
+}
+
+html {
+    overflow-x: hidden;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+img{
+    border: none;
+    border-radius: 10px;
+}
+
+
+.title-image{
+    
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 60px;
+    flex-wrap: wrap;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(0 0 0 / 50%);
+    background-blend-mode: overlay;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.title-image img{
+    border: none;
+    border-radius: 10px;
+}
+h1{
+    font-size: 40px;
+    text-decoration: none;
+    width: 50%;
+    text-align: inherit;
+    color: var(--navbar-color);
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+    height: fit-content;
+    position: relative;
+    top: 80px;
+    justify-content: space-between;
+    background: var(--navbar-bg);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 -1px 2px var(--navbar-box-shadow);
+}
+
+.content-container{
+    height: 100%;
+    width: 60%;
+    background-color: transparent;
+}
+
+.featured-post{
+    height: fit-content;
+    width: 30%;
+    border: 1px var(--navbar-box-shadow);
+    background: transparent;
+}
+
+.featured-post .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.featured-post a .name h5{
+    text-decoration: none;
+    font-weight: lighter;
+    color: var(--shadow-color-);
+    padding: 10px;
+}
+
+.featured-post a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.featured-post img{
+    width: 103px;
+    height: auto;
+    border: none;
+    border-radius: 0px;
+    padding-left: 13px;
+}
+
+.featured-post hr{
+    width: 80%;
+    color: purple;
+}
+
+p{
+    font-size: 18px;
+    padding: 20px 0px;
+    font-family: 'Poppins';
+}
+
+.contact-flex{
+    position: relative;
+    top: 69px;
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+
+/* Apply flex layout to the content div */
+.content {
+    display: flex; /* Allow content to wrap to the next line when necessary */
+  }
+  
+  /* Flex the content container to occupy the available space */
+  .content-container {
+    flex: 0.9;
+    min-width: 300px; /* Set a minimum width for the content container to prevent excessive wrapping */
+  }
+  
+  /* Fix the position of the featured post and position it to the right */
+  .featured-post {
+    width: 300px; /* Adjust the width as per your requirement */
+    margin-left: 20px; /* Add some margin to separate the content and featured post */
+    position: sticky;
+    top: 50px; /* Stick the featured post to the top of the viewport */
+    padding-bottom: 10px;
+  }
+
+  @media(max-width: 916px){
+    h1, img{
+        width: 90%;
+        font-size: 30px;
+    }
+    
+  }
+
+  @media(max-width: 780px){
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-container{
+        width: 80vw;
+    }
+
+    .featured-post{
+        width: 50%;
+    }
+  }
+
+  @media(max-width: 600px){
+    .featured-post{
+        width: 80%;
+    }
+  }
+
+.sub-heading{
+    font-weight: bold;
+    color: var(--navbar-box-shadow);
+    font-size: 30px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img{
+    width: 100%;
+    height: auto;
+    max-width: 80vw;
+}
+
+h2{
+    font-style: oblique;
+}
+
+.date{
+    position: relative;
+    top: 0px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.date span{
+    color: blue;
+}
+
+.underline{
+    text-decoration: underline;
+    font-weight: bold;
+}
