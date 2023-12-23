@@ -34,6 +34,7 @@
 body {
     font-family: 'Poppins';
     font-size: 16px;
+    overflow-x: hidden;
     line-height: 1.5;
     color: var(--text-color);
     background: var(--bg-color);
@@ -49,8 +50,11 @@ img{
     
     display: flex;
     justify-content: space-around;
+<<<<<<< HEAD
     position: relative;
     top: 0;
+=======
+>>>>>>> dd191ce81d34241f424c97c3f2a4370b2e5aa618
     flex-wrap: wrap;
     background-position: center;
     background-size: cover;
@@ -233,6 +237,7 @@ h2{
     text-decoration: underline;
     font-weight: bold;
 }
+<<<<<<< HEAD
 
 /* Apply a basic style to the comments section */
 .comments-section {
@@ -310,3 +315,5 @@ h2{
     background: #013aa5;
   }
   
+=======
+>>>>>>> dd191ce81d34241f424c97c3f2a4370b2e5aa618
