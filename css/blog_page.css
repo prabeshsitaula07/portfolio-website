@@ -25,10 +25,6 @@
     --shadow-color-: rgb(201, 201, 201);
 }
 
-html {
-    overflow-x: hidden;
-
-}
 
 * {
     box-sizing: border-box;
