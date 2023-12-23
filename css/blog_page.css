@@ -25,10 +25,6 @@
     --shadow-color-: rgb(201, 201, 201);
 }
 
-html {
-    overflow-x: hidden;
-
-}
 
 * {
     box-sizing: border-box;
@@ -54,7 +50,7 @@ img{
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: 60px;
+    top: 0;
     flex-wrap: wrap;
     background-position: center;
     background-size: cover;
@@ -237,3 +233,80 @@ h2{
     text-decoration: underline;
     font-weight: bold;
 }
+
+/* Apply a basic style to the comments section */
+.comments-section {
+    margin: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+  }
+  
+  /* Style the comments container */
+  #comments-container {
+    margin-top: 20px;
+  }
+  
+  /* Style the comment form */
+  #comment-form {
+    margin-top: 20px;
+  }
+  
+  #comment-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #comment-form input,
+  #comment-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  #comment-form button {
+    background-color: #0151CB;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #comment-form button:hover {
+    background-color: #013aa5;
+  }
+  
+  /* Style individual comments */
+  #comments-container div {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid var(--text-color);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  #comments-container strong {
+    font-weight: bold;
+    color: #0151CB;
+  }
+  
+  /* Style delete button in comments */
+  .delete-btn {
+    background: #0151CB;
+    border: 1px solid black;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background: #013aa5;
+  }
+  

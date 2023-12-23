@@ -13,6 +13,7 @@
   <meta name="keywords"
     content="+2 students, hardwork, dedication">
   <script src="../js/main.js"></script>
+  <script src="../js/comments.js"></script>
   <style>
     .title-image{
       background-image: url(../blog-image/myth.jpg);
@@ -234,6 +235,26 @@ The most important things is to be calm and try to understand the situation and 
     <div class="copy">
       <h3 align="center">2023 all rights reserved &copy; |PRABESH SITAULA|</h3>
     </div>
+  </div>
+  
+  <section class="comments-section">
+    <h2>Comments</h2>
+    
+  
+    <!-- New comment form -->
+    <form id="comment-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+  
+      <label for="comment">Comment:</label>
+      <textarea id="comment" rows="4" required></textarea>
+  
+      <button type="button" onclick="addComment()">Add Comment</button>
+    </form>
+    <div id="comments-container">
+      <!-- Comments will be dynamically added here -->
+    </div>
+  </section>
 </body>
 
 </html>

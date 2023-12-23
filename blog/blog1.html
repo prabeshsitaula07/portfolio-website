@@ -13,13 +13,15 @@
   imagination.In this blog post, we will explore ten book reading
   habits that can help you develop a lifelong love for reading and make the most out of your reading experience.">
   <meta name="keywords" content="e-books, students, Guideline, reading">
-  <link rel="icon" href= '../image/logo.jpg'>
+  <link rel="icon" href='../image/logo.jpg'>
   <script src="../js/main.js"></script>
-  <style>
-    .title-image{
+  <!-- <script src=""></script> -->
+  <script src="../js/comments.js"></script>
+  <style> 
+    .title-image {
       background-image: url(../blog-image/audiobook.jpg);
     }
-</style>
+  </style>
 </head>
 
 <body>
@@ -209,6 +211,7 @@
     </div>
   </section>
 
+
   <div class="contact-flex">
     <div class="contact-detail">
       <h3>9848589357</h3>
@@ -218,6 +221,26 @@
     <div class="copy">
       <h3 align="center">2023 all rights reserved &copy; |PRABESH SITAULA|</h3>
     </div>
+  </div>
+    <section class="comments-section">
+      <h2>Comments</h2>
+      
+    
+      <!-- New comment form -->
+      <form id="comment-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+    
+        <label for="comment">Comment:</label>
+        <textarea id="comment" rows="4" required></textarea>
+    
+        <button type="button" onclick="addComment()">Add Comment</button>
+      </form>
+      <div id="comments-container">
+        <!-- Comments will be dynamically added here -->
+      </div>
+    </section>
+    
 </body>
 
 </html>
