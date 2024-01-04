@@ -196,7 +196,11 @@ p{
         width: 80%;
     }
   }
-
+  @media(max-width: 410px){
+    .content{
+      width: 98%;
+    }
+  }
 .sub-heading{
     font-weight: bold;
     color: var(--navbar-box-shadow);
